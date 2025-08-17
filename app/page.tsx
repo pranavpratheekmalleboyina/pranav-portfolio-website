@@ -6,10 +6,10 @@ export default function Page() {
   return (
     <div className="space-y-16">
       <section className="space-y-6 text-center">
-        <h1 className="h1">Full-Stack Engineer building fast, reliable products</h1>
+        <h1 className="h1">My Personal Portfolio</h1>
         <p className="max-w-2xl mx-auto p">
-          I turn ideas into secure, performant apps using React, Node, and Python.
-          Here are a few projects I’m proud of.
+          Full Stack developer skilled in HTML,CSS,Javascript and Python,Java, Python who is passionate
+          about building efficient applications that cater to the needs of the industry.
         </p>
         <div className="flex justify-center gap-4">
           <Link href="/projects" className="btn btn-primary">View Projects</Link>

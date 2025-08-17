@@ -31,9 +31,9 @@ export default async function Page({ params }: PageProps) {
         <h1 className="h1">{p.title}</h1>
         <p className="mt-2 p">{p.description}</p>
 
-        {p.tags?.length ? (
+        {p.tech?.length ? (
           <div className="flex flex-wrap gap-2 mt-3">
-            {p.tags.map((t) => (
+            {p.tech.map((t) => (
               <span key={t} className="badge">{t}</span>
             ))}
           </div>
@@ -79,13 +79,13 @@ export default async function Page({ params }: PageProps) {
 
       {/* Actions */}
       <div className="flex gap-4 text-sm">
-        {p.demoUrl && (
-          <a className="btn btn-primary" href={p.demoUrl} target="_blank" rel="noopener noreferrer">
+        {p.demo && (
+          <a className="btn btn-primary" href={p.demo} target="_blank" rel="noopener noreferrer">
             View Live
           </a>
         )}
-        {p.repoUrl && (
-          <a className="btn" href={p.repoUrl} target="_blank" rel="noopener noreferrer">
+        {p.repo && (
+          <a className="btn" href={p.repo} target="_blank" rel="noopener noreferrer">
             See Code
           </a>
         )}

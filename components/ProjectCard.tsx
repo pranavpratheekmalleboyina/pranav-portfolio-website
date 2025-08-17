@@ -12,8 +12,8 @@ export default function ProjectCard({ p }: Props) {
         </h3>
         <p className="p">{p.description}</p>
         <div className="flex gap-3 mt-3">
-          {p.demoUrl && <a className="btn btn-sm" href={p.demoUrl}>Live</a>}
-          {p.repoUrl && <a className="btn btn-sm" href={p.repoUrl}>Code</a>}
+          {p.demo && <a className="btn btn-sm" href={p.demo}>Live</a>}
+          {p.repo && <a className="btn btn-sm" href={p.repo}>Code</a>}
         </div>
       </div>
     </article>
