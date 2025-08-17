@@ -4,10 +4,10 @@
 
 /* Base tokens & resets first */
 @layer base {
-  :root { --bg: 255 255 255; --fg: 17 24 39; }
+  :root { --bg: 255 255 255; --fg: 17 24 39; } 
   html.dark { --bg: 15 23 42; --fg: 241 245 249; }
 
-  body { color: rgb(var(--fg)); background: rgb(var(--bg)); }
+  body { color: rgb(241 245 249); background: rgb(15 23 42); }
 }
 
 /* Reusable components */

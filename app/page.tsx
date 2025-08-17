@@ -6,23 +6,19 @@ export default function Page() {
   return (
     <div className="space-y-16">
       <section className="space-y-6 text-center">
-        <h1 className="h1">My Personal Portfolio</h1>
+        <h1 className="h1">Pranav Pratheek Malleboyina</h1>
         <p className="max-w-2xl mx-auto p">
-          Full Stack developer skilled in HTML,CSS,Javascript and Python,Java, Python who is passionate
-          about building efficient applications that cater to the needs of the industry.
+          Hi! I’m a Computer Science graduate student at Texas A&M University–Corpus Christi,
+          with 5+ years of experience as a backend engineer in Java Springboot and .NET.
+          My expertise spreads across Android (Kotlin, Jetpack Compose), full-stack web development, and Python/ML.
+          I enjoy building products that are reliable, scalable, and intuitive for users.
         </p>
         <div className="flex justify-center gap-4">
-          <Link href="/projects" className="btn btn-primary">View Projects</Link>
-          <a href="/resume.pdf" className="btn" download>Download Resume</a>
-        </div>
-      </section>
-
-      <section className="space-y-6">
-        <h2 className="h2">Featured Projects</h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {projects.slice(0, 4).map((proj) => (
-            <ProjectCard key={proj.slug} p={proj} />
-          ))}
+          <a href="/Pranav_Pratheek_Malleboyina_Resume.pdf" 
+             className="btn btn-primary" 
+             download="Pranav_Pratheek_Malleboyina_Resume.pdf">
+                Download Resume
+          </a>
         </div>
       </section>
     </div>

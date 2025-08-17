@@ -26,19 +26,33 @@ export default function Page() {
     <div className="space-y-6">
       <h1 className="h1">Contact</h1>
       <p className="p">
-        Email me at <a className="underline" href="mailto:you@example.com">you@example.com</a> or use the form below.
+        Please Email me at 
+        <a className="underline" href="mailto:pranavp.malleboyina@gmail.com">
+            pranavp.malleboyina@gmail.com
+        </a> 
+        or use the form below.
       </p>
 
       <form className="max-w-md space-y-4" onSubmit={onSubmit}>
-        <input name="name" placeholder="Your name" className="w-full p-3 border rounded-xl" required />
-        <input type="email" name="email" placeholder="Your email" className="w-full p-3 border rounded-xl" required />
-        <textarea name="message" placeholder="Your message" className="w-full p-3 border rounded-xl h-36" required />
+        <input name="name" 
+               placeholder="Your name" 
+               className="w-full p-3 border rounded-xl" 
+               required />
+        <input type="email" 
+               name="email" 
+               placeholder="Your email" 
+               className="w-full p-3 border rounded-xl" 
+               required />
+        <textarea name="message" 
+                  placeholder="Your message" 
+                  className="w-full p-3 border rounded-xl h-36" 
+                  required />
         <button disabled={state==="sending"} className="btn btn-primary">
           {state==="sending" ? "Sending..." : "Send"}
         </button>
       </form>
 
-      {state==="sent" && <p className="text-sm text-green-600">Thanks! I’ll get back to you soon.</p>}
+      {state==="sent" && <p className="text-sm text-green-600">Thank you for your time! I’ll get back to you soon.</p>}
       {state==="error" && <p className="text-sm text-red-600">Something went wrong. Try again.</p>}
     </div>
   );
