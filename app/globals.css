@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your design tokens (optional) */
+/* :root { --radius: 1rem; } */
+
+@layer components {
+  .h1 { @apply text-3xl font-bold tracking-tight md:text-4xl; }
+  .h2 { @apply text-2xl font-semibold tracking-tight md:text-3xl; }
+  .p  { @apply text-base leading-7 text-gray-700; }
+
+  .btn { @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition border rounded-xl hover:shadow; }
+  .btn-primary { @apply text-white border-transparent bg-brand hover:bg-brand/90; }
+
+  .card  { @apply p-5 transition border rounded-2xl hover:shadow-lg; }
+  .badge { @apply px-3 py-1 text-xs bg-gray-100 rounded-full; }
+}
