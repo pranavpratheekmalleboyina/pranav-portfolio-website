@@ -24,10 +24,11 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-6">
+      <h1>CONTACT ME</h1>
       <p className="p">
-        Please Email me at 
+        Please Email me at  
         <a className="underline" href="mailto:pranavp.malleboyina@gmail.com">
-            pranavp.malleboyina@gmail.com
+             pranavp.malleboyina@gmail.com
         </a> 
         or use the form below.
       </p>
@@ -51,7 +52,7 @@ export default function ContactPage() {
         </button>
       </form>
 
-      {state==="sent" && <p className="text-sm text-green-600">Thank you for your time! I’ll get back to you soon.</p>}
+      {state==="sent" && <p className="text-sm text-green-600">Thank you for your time! I’ll get back to you as soon as possible.</p>}
       {state==="error" && <p className="text-sm text-red-600">Something went wrong. Try again.</p>}
     </div>
   );
