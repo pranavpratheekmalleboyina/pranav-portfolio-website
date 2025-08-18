@@ -6,6 +6,10 @@ import ExperiencePage from "./experience/page";
 import EducationPage from "./education/page";
 import SkillsPage from "./skills/page";
 import ContactPage from "./contact/page";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
+
 
 export default function Page() {
   return (
@@ -31,6 +35,30 @@ export default function Page() {
       <section id="contact" className="py-24 text-center">
           <ContactPage />
       </section>
+        <div className="fixed flex flex-col gap-5 text-2xl right-6 top-1/3">
+          <a href="https://github.com/pranavpratheekmalleboyina" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="transition hover:text-cyan-400">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/pranav-pratheek-malleboyina-41a154191/" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="transition hover:text-cyan-400">
+            <FaLinkedin />
+          </a>
+          <a href="mailto:pranavp.malleboyina@gmail.com" 
+             className="transition hover:text-cyan-400">
+            <MdEmail />
+          </a>
+          <a href="https://leetcode.com/u/pranav_malleboyina/" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="transition hover:text-cyan-400">
+            <SiLeetcode />
+          </a>
+        </div>
     </main>  
   );
 }

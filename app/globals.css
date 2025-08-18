@@ -50,7 +50,10 @@
 
   p { color: rgb(var(--ink-body)); }
   a { color: rgb(var(--brand-1)); }
-  a:hover { color: rgb(var(--brand-2)); }
+  a:hover { 
+    filter: brightness(1.15);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4); /* indigo glow */ 
+  }
 }
 
 /* ---------- Components ---------- */
@@ -77,8 +80,9 @@
     transition: color 0.2s ease, filter 0.2s ease;
   }
   .btn-primary:hover { 
-    filter: brightness(1.1);
-    color: rgb(17 24 39);
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4); /* indigo glow */
  }
 
   .card {

@@ -23,29 +23,30 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <h1>CONTACT ME</h1>
+    <div className="container px-4 mx-auto text-center-y-6">
+      <h1 >CONTACT ME</h1>
       <p className="p">
-        Please Email me at  
-        <a className="underline" href="mailto:pranavp.malleboyina@gmail.com">
+        Please Email me at{"  "}
+        <a className="transition text-cyan-400 hover:text-violet-400" href="mailto:pranavp.malleboyina@gmail.com">
              pranavp.malleboyina@gmail.com
         </a> 
-        or use the form below.
+        {"  "}or use the form below.
       </p>
 
-      <form className="max-w-md space-y-4" onSubmit={onSubmit}>
+      <form className="max-w-lg mx-auto space-y-4" onSubmit={onSubmit}>
         <input name="name" 
                placeholder="Your name" 
-               className="w-full p-3 border rounded-xl" 
+               className="w-full px-4 py-3 text-gray-900 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" 
                required />
         <input type="email" 
                name="email" 
                placeholder="Your email" 
-               className="w-full p-3 border rounded-xl" 
+               className="w-full px-4 py-3 text-gray-900 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" 
                required />
         <textarea name="message" 
                   placeholder="Your message" 
-                  className="w-full p-3 border rounded-xl h-36" 
+                  rows={6}
+                  className="w-full px-4 py-3 text-gray-900 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" 
                   required />
         <button disabled={state==="sending"} className="btn btn-primary">
           {state==="sending" ? "Sending..." : "Send"}
