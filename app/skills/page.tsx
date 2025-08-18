@@ -1,4 +1,4 @@
-export default function Page() {
+export default function SkillsPage() {
   return (
     <div className="prose max-w-none">
       <h1>Skills</h1>

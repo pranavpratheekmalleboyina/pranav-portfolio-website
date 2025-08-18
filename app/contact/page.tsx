@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function Page() {
+export default function ContactPage() {
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -24,7 +24,6 @@ export default function Page() {
 
   return (
     <div className="space-y-6">
-      <h1 className="h1">Contact</h1>
       <p className="p">
         Please Email me at 
         <a className="underline" href="mailto:pranavp.malleboyina@gmail.com">

@@ -4,8 +4,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Inter } from "next/font/google";
 import ThemeScript from "./theme-script";
+import { Poppins } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"] , weight: ["400", "500", "600", "700"] });
+
 export const metadata: Metadata = {
   title: "Pranav Pratheek Malleboyina — Portfolio",
   description:
@@ -32,9 +35,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Header />
-        <main className="container py-12">{children}</main>
+        <main className="container px-4 py-12 pt-16 mx-auto">{children}</main> 
         <Footer />
       </body>
     </html>

@@ -1,7 +1,7 @@
 import ProjectCard from "../../components/ProjectCard";
 import { projects } from "../../lib/projects";
 
-export default function Page() {
+export default function ProjectsPage() {
   return (
     <div className="space-y-6">
       <p className="p">A list of all my the projects that I have done so far. </p>
