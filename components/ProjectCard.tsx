@@ -13,7 +13,7 @@ export default function ProjectCard({ p }: Props) {
         <p className="p">{p.description}</p>
         <div className="flex gap-3 mt-3">
           {p.demo && <a className="btn btn-sm" href={p.demo}>Live</a>}
-          {p.repo && <a className="btn btn-sm" href={p.repo}>Code</a>}
+          {p.repo && <a className="btn btn-sm" href={p.repo}>Github</a>}
         </div>
       </div>
     </article>

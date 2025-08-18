@@ -16,14 +16,14 @@ export default function Page() {
       <section id="about" className="py-24 text-center">
           <AboutPage />
       </section>
-      <section id="projects" className="py-24 text-center">
-          <ProjectsPage />
-      </section>
       <section id="experience" className="py-24 text-center">
           <ExperiencePage />
       </section>
       <section id="education" className="py-24 text-center">
           <EducationPage />
+      </section>
+      <section id="projects" className="py-24 text-center">
+          <ProjectsPage />
       </section>
       <section id="skills" className="py-24 text-center">
           <SkillsPage />
