@@ -9,7 +9,7 @@ import ContactPage from "./contact/page";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
-
+import { FiPhone } from "react-icons/fi";
 
 export default function Page() {
   return (
@@ -58,6 +58,10 @@ export default function Page() {
              className="transition hover:text-cyan-400">
             <SiLeetcode />
           </a>
+          <a href="tel:+ 361-905-5923" 
+             className="transition hover:text-cyan-400">
+             <FiPhone />
+           </a>
         </div>
     </main>  
   );

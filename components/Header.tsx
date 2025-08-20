@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "#home", label: "HOME" },
-  { href: "#about", label: "ABOUT" },
-  { href: "#experience", label: "EXPERIENCE" },
-  { href: "#education", label: "EDUCATION" },
-  { href: "#projects", label: "PROJECTS" },
-  { href: "#skills", label: "SKILLS" },
-  { href: "#contact", label: "CONTACT" }
+  { href: "/#home", label: "HOME" },
+  { href: "/#about", label: "ABOUT" },
+  { href: "/#experience", label: "EXPERIENCE" },
+  { href: "/#education", label: "EDUCATION" },
+  { href: "/#projects", label: "PROJECTS" },
+  { href: "/#skills", label: "SKILLS" },
+  { href: "/#contact", label: "CONTACT" }
 ] as const;
 
 export default function Header() {

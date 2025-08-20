@@ -26,11 +26,9 @@ export default function ContactPage() {
     <div className="container px-4 mx-auto text-center-y-6">
       <h1 >CONTACT ME</h1>
       <p className="p">
-        Please Email me at{"  "}
-        <a className="transition text-cyan-400 hover:text-violet-400" href="mailto:pranavp.malleboyina@gmail.com">
-             pranavp.malleboyina@gmail.com
-        </a> 
-        {"  "}or use the form below.
+        Do you hav a  project, idea or opportunity ? I would love to hear from you. Please reach out to me via email 
+        <br />
+        or through the form below.
       </p>
 
       <form className="max-w-lg mx-auto space-y-4" onSubmit={onSubmit}>

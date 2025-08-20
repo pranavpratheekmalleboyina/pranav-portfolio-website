@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export default function HomePage(){
     return(
         <main>
@@ -20,11 +22,11 @@ export default function HomePage(){
                 <p className="max-w-2xl mx-auto p">
                   Full-Stack developer with experience in Machine Learning and Artificial Intelligence
                 </p> 
-                  <a href="/Pranav_Pratheek_Malleboyina_Resume.pdf" 
-                     className="btn btn-primary" 
-                     download="Pranav_Pratheek_Malleboyina_Resume.pdf">
-                        Download Resume
-                  </a>
+                  <Link href="/#contact" 
+                     className="btn btn-primary"
+                     scroll >
+                        Contact Me
+                  </Link>
         </div>
         </main>                
     );
