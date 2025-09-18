@@ -14,25 +14,25 @@ import { FiPhone } from "react-icons/fi";
 export default function Page() {
   return (
     <main>
-      <section id="home" className="py-24 text-center">
+      <section id="home" className="text-center py-14">
         <HomePage />
       </section>
-      <section id="about" className="py-24 text-center">
+      <section id="about" className="text-center py-14">
           <AboutPage />
       </section>
-      <section id="experience" className="py-24 text-center">
+      <section id="experience" className="text-center py-14">
           <ExperiencePage />
       </section>
-      <section id="education" className="py-24 text-center">
+      <section id="education" className="text-center py-14">
           <EducationPage />
       </section>
-      <section id="projects" className="py-24 text-center">
+      <section id="projects" className="text-center py-14">
           <ProjectsPage />
       </section>
-      <section id="skills" className="py-24 text-center">
+      <section id="skills" className="text-center py-14">
           <SkillsPage />
       </section>
-      <section id="contact" className="py-24 text-center">
+      <section id="contact" className="text-center py-14">
           <ContactPage />
       </section>
         <div className="fixed flex flex-col gap-5 text-2xl right-6 top-1/3">
