@@ -44,7 +44,7 @@ export const education: Edu[] = [
     ],
   },
   {
-    school: "GRIET",
+    school: "Gokaraju Rangaraju Institute of Engineering and Technology",
     degree: "Bachelor of Technology — BTech, Information Technology",
     start: "Sep 2013",
     end: "Jul 2017",
