@@ -1,7 +1,7 @@
 export default function EducationPage() {
   return (
     <div className="prose max-w-none">
-      <h1>EDUCATION</h1>
+      <h2 className="mb-8 h2">EDUCATION</h2>
         <p>
             I hold a Master's degree in Computer Science from Texas A&M University–Corpus Christi, 
             where I focused on software engineering and machine learning. My undergraduate degree is 

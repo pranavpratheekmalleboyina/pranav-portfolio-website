@@ -24,7 +24,7 @@ export default function ContactPage() {
 
   return (
     <div className="container px-4 mx-auto text-center-y-6">
-      <h1 >CONTACT ME</h1>
+      <h2 className="mb-8 h2">CONTACT ME</h2>
       <p className="p">
         Do you hav a  project, idea or opportunity ? I would love to hear from you. Please reach out to me via email 
         <br />

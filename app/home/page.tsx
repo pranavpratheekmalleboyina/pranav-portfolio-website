@@ -11,7 +11,7 @@ export default function HomePage(){
             alt="Pranav Pratheek Malleboyina"
             width={250}
             height={250}
-            className="border-4 border-indigo-500 rounded-full shadow-lg"
+            className="mb-6 border-4 border-indigo-500 rounded-full shadow-lg"
             priority
            />
         <h1 className="text-5xl font-extrabold tracking-tight text-transparent md:text-6xl bg-gradient-to-r from-cyan-400 via-indigo-500 to-violet-500 bg-clip-text"
@@ -20,7 +20,8 @@ export default function HomePage(){
          </div>    
          <div className="flex flex-col items-center gap-4"> 
                 <p className="max-w-2xl mx-auto p">
-                  Full-Stack developer with experience in Machine Learning and Artificial Intelligence
+                  Full-Stack Developer | Android Developer | Machine Learning 
+                  | Artificial Intelligence | Masters in Computer Science @ TAMU-CC
                 </p> 
                   <Link href="/#contact" 
                      className="btn btn-primary"
