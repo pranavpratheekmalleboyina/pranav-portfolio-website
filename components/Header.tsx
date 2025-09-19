@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 h-16 navbar">
       <div className="container flex items-center justify-center h-full px-4 mx-auto">
-        <nav className="hidden md:flex items-center gap-9 text-[0.95rem] tracking-wide">
+        <nav className="flex items-center text-sm tracking-wide gap-9">
           {nav.map((item) => (
             <Link
               key={item.href}
