@@ -19,7 +19,9 @@ export default async function Page({ params }: PageProps) {
       <div className="space-y-4">
         <h1 className="h1">Project not found</h1>
         <p className="p">The project you’re looking for doesn’t exist.</p>
-        <Link href="/projects" className="btn">Back to Projects</Link>
+        <Link href="/projects" className="btn">
+          Back to Projects
+        </Link>
       </div>
     );
   }
@@ -34,7 +36,9 @@ export default async function Page({ params }: PageProps) {
         {p.tech?.length ? (
           <div className="flex flex-wrap gap-2 mt-3">
             {p.tech.map((t) => (
-              <span key={t} className="badge">{t}</span>
+              <span key={t} className="badge">
+                {t}
+              </span>
             ))}
           </div>
         ) : null}
@@ -42,16 +46,17 @@ export default async function Page({ params }: PageProps) {
 
       {/* Hero Image */}
       {p.image ? (
-        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+        <figure className="relative max-w-3xl mx-auto overflow-hidden aspect-video rounded-xl bg-slate-800/40 ring-1 ring-slate-700/50">
           <Image
             src={p.image}
             alt={p.title}
             fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 80vw"
+            className="object-contain" // was object-cover
+            sizes="(min-width:1024px) 768px, 92vw"
             priority
+            quality={90}
           />
-        </div>
+        </figure>
       ) : null}
 
       {/* Case Study or About */}
@@ -60,13 +65,19 @@ export default async function Page({ params }: PageProps) {
           <>
             <h2 className="h2">Case Study</h2>
             {(p as any).caseStudy?.problem && (
-              <p className="p"><strong>Problem:</strong> {(p as any).caseStudy.problem}</p>
+              <p className="p">
+                <strong>Problem:</strong> {(p as any).caseStudy.problem}
+              </p>
             )}
             {(p as any).caseStudy?.approach && (
-              <p className="p"><strong>Approach:</strong> {(p as any).caseStudy.approach}</p>
+              <p className="p">
+                <strong>Approach:</strong> {(p as any).caseStudy.approach}
+              </p>
             )}
             {(p as any).caseStudy?.impact && (
-              <p className="p"><strong>Impact:</strong> {(p as any).caseStudy.impact}</p>
+              <p className="p">
+                <strong>Impact:</strong> {(p as any).caseStudy.impact}
+              </p>
             )}
           </>
         ) : (
@@ -79,14 +90,14 @@ export default async function Page({ params }: PageProps) {
 
       {/* Actions */}
       <div className="flex gap-4 text-sm">
-        {p.demo && (
-          <a className="btn btn-primary" href={p.demo} target="_blank" rel="noopener noreferrer">
-            View Live
-          </a>
-        )}
         {p.repo && (
-          <a className="btn" href={p.repo} target="_blank" rel="noopener noreferrer">
-            See Code
+          <a
+            className="btn"
+            href={p.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
           </a>
         )}
       </div>

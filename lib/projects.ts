@@ -10,7 +10,6 @@ export type Project = {
   tech: string[];
   description: string;
   repo: string;
-  demo?: string;
   image?: string;
   caseStudy: {
     problem: string[];
@@ -27,12 +26,11 @@ export const projects: Project[] = [
   {
     title: "Streakly — A customized habit tracker",
     slug: "streakly",
-    tech: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"],
+    tech: ["Java", "XML", "Firebase", "MVVM"],
     description:
       "Track habits with streaks, charts, leaderboards, and badges. MVVM + Firestore with offline support.",
     repo: "https://github.com/pranavpratheekmalleboyina/android-streakly",
-    demo: "", // optional Play Store/TestFairy link later
-    image: "/images/streakly.jpg",
+    image: "/images/streakly.png",
     caseStudy: {
       problem: [
       "Customized habit tracker Android app that enables users to add and track habits with streaks.",
@@ -65,7 +63,7 @@ export const projects: Project[] = [
     description:
       "MCQ + True/False quizzes with scoring, review mode, and a polished end-of-quiz rating UX.",
     repo: "https://github.com/pranavpratheekmalleboyina/android-quizoku-app",
-    image: "/images/quizoku.jpg",
+    image: "/images/quizoku.png",
     caseStudy: {
       problem: [
         "Needed a practice project to apply and strengthen app development concepts.",
@@ -97,7 +95,7 @@ export const projects: Project[] = [
     tech: ["Python", "scikit-learn", "pandas"],
     description: "Content-based movie recommendation with explainable scoring.",
     repo: "https://github.com/pranavpratheekmalleboyina/movie-recommendation-system",
-    image: "/images/movies.jpg",
+    image: "/images/movies.png",
     caseStudy: {
       problem: [
         "Movie streaming platforms host vast libraries, making it difficult for users to discover relevant content.",
@@ -123,7 +121,7 @@ export const projects: Project[] = [
     description:
       "Our Capstone project that helps job seekers track applications and build AI-powered resumes.",
     repo: "https://github.com/mohammedali5408/ProjectJobNexus",
-    image: "/images/movies.jpg",
+    image: "/images/job_nexus.png",
     caseStudy: {
       problem: [
         "Job seekers often struggle to manage multiple applications across platforms, leading to missed deadlines and poor tracking.",
@@ -153,7 +151,7 @@ export const projects: Project[] = [
     description:
       "An applicataion that extracts keywords from a text-based document using NLP.",
     repo: "https://github.com/mohammedali5408/ProjectJobNexus",
-    image: "/images/movies.jpg",
+    image: "/images/keyword_extractor.png",
     caseStudy: {
       problem: [
         "Manually identifying the most relevant keywords from large text documents is time-consuming and error-prone.",
@@ -182,7 +180,7 @@ export const projects: Project[] = [
     description:
       "An application that screens an uploaded resume and predicts the type of the job depending on the keywords extracted from the document.",
     repo: "https://github.com/pranavpratheekmalleboyina/resume-screening-application",
-    image: "/images/movies.jpg",
+    image: "/images/resume_screener.png",
     caseStudy: {
       problem: [
         "Recruiters and hiring managers receive hundreds of resumes, making manual screening slow and error-prone.",
@@ -211,7 +209,7 @@ export const projects: Project[] = [
     description:
       "An application that analyzes the weather data from previous years and predicts whether it would rain the next day or not.",
     repo: "https://github.com/pranavpratheekmalleboyina/DL-rainfall-prediction-project",
-    image: "/images/movies.jpg",
+    image: "/images/rainfall_prediction.png",
     caseStudy: {
       problem: [
         "Accurate rainfall prediction is critical for agriculture, water resource management, and disaster preparedness.",

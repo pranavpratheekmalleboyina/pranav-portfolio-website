@@ -24,14 +24,14 @@ export default function ContactPage() {
 
   return (
     <div className="container px-4 mx-auto text-center-y-6">
-      <h2 className="mb-8 h2">CONTACT ME</h2>
+      <h2 className="mb-4 h2">CONTACT ME</h2>
       <p className="p">
-        Do you hav a  project, idea or opportunity ? I would love to hear from you. Please reach out to me via email 
+        Do you have a  project, idea or opportunity ? I would love to hear from you. Please reach out to me via email 
         <br />
         or through the form below.
       </p>
 
-      <form className="max-w-lg mx-auto space-y-4" onSubmit={onSubmit}>
+      <form className="max-w-lg mx-auto mt-4 space-y-4" onSubmit={onSubmit}>
         <input name="name" 
                placeholder="Your name" 
                className="w-full px-4 py-3 text-gray-900 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" 
