@@ -48,7 +48,7 @@ export default function ProjectCard({ p }: { p: any }) {
           >
             Github
           </a>
-        )} 
+        )}, 
           <a
             href={`/projects/${p.slug}`}
             target="_blank"

@@ -59,9 +59,9 @@ export default function ExperiencePage() {
 
                 {/* bullets */}
                 {job.bullets?.length ? (
-                  <ul className="pl-5 mt-4 space-y-2 list-disc text-slate-300">
+                  <ul className="pl-5 mt-4 space-y-1.5 list-disc text-slate-300">
                     {job.bullets.map((b: string, idx: number) => (
-                      <li key={idx}>{b}</li>
+                      <li key={idx} className="text-justify">{b}</li>
                     ))}
                   </ul>
                 ) : null}

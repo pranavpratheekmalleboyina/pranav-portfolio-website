@@ -55,12 +55,12 @@ export default function Educationpage() {
                 {/* Activities & societies */}
                 {ed.activities?.length ? (
                   <div className="mt-4">
-                    <p className="mb-1 text-sm font-medium text-slate-400">
+                    <p className="mb-1 text-sm font-medium text-justify text-slate-400">
                       Activities & societies
                     </p>
                     <ul className="pl-5 space-y-1 list-disc text-slate-300">
                       {ed.activities.map((a, idx) => (
-                        <li key={idx}>{a}</li>
+                        <li key={idx} className="text-justify">{a}</li>
                       ))}
                     </ul>
                   </div>
@@ -69,12 +69,12 @@ export default function Educationpage() {
                 {/* Relevant coursework */}
                 {ed.coursework?.length ? (
                   <div className="mt-4">
-                    <p className="mb-1 text-sm font-medium text-slate-400">
+                    <p className="mb-1 text-sm font-medium text-justify text-slate-400">
                       Relevant Coursework
                     </p>
-                    <ul className="grid grid-cols-1 pl-5 list-disc md:grid-cols-2 gap-y-1 text-slate-300">
+                    <ul className="grid grid-cols-1 pl-5 list-disc gap-y-1 text-slate-300">
                       {ed.coursework.map((c, idx) => (
-                        <li key={idx}>{c}</li>
+                        <li key={idx} className="text-justify">{c}</li>
                       ))}
                     </ul>
                   </div>

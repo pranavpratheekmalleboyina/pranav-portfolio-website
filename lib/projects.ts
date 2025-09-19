@@ -116,7 +116,7 @@ export const projects: Project[] = [
   },
   {
     title: "Job Nexus - A Job Builder and Resume Tracker platform ",
-    slug: "job nexus",
+    slug: "job-nexus",
     tech: ["Node.js", "Next.js", "Vercel", "Firebase", "Machine Learning"],
     description:
       "Our Capstone project that helps job seekers track applications and build AI-powered resumes.",
