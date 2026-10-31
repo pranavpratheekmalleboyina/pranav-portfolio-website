@@ -13,6 +13,7 @@ export type Edu = {
 };
 
 export const education: Edu[] = [
+  
   {
     school: "Texas A&M University–Corpus Christi",
     degree: "Master of Science — MS, Computer Science",
