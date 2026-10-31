@@ -4,42 +4,39 @@ export default function AboutPage() {
       <h2 className="mb-8 h2">ABOUT</h2>
       <div className="space-y-6 leading-relaxed text-justify text-slate-300">
         <p>
-          Hi! I’m Pranav Pranav Malleboyina, a software professional who
-          combines 5.5+ years of industry experience with advanced academic
-          expertise in Machine Learning, Artificial Intelligence, and Android
-          Development. I honed these skills during my Master’s in Computer
-          Science at Texas A&M University–Corpus Christi, which deepened my
-          ability to design data-driven, intelligent solutions.<br />
-      
-          Prior to my graduate studies, I worked extensively with Java, J2EE,
-          Spring Boot Framework, and ASP.NET in India, contributing to the
-          development and support of enterprise-level applications. My
-          background covers the entire software development lifecycle — from
-          requirement analysis and architecture design to coding, testing,
-          deployment, and long-term maintenance. <br />
-          
-          I thrive in Agile (Scrum) environments, collaborating with
-          cross-functional teams to deliver scalable, high-quality software. I
-          bring strong expertise in Object-Oriented Design, hands-on experience
-          with version control (GitHub, Bitbucket), and proficiency with
-          collaboration and project management tools (JIRA, Confluence). I take
-          pride in translating complex business requirements into innovative,
-          practical solutions that drive measurable impact. <br />
-        
-          Looking ahead, I am eager to leverage my experience and expertise to
-          contribute to cutting-edge projects, create value through technology,
-          and continuously grow as a professional.<br />
-        
-          📩 Always open to connecting with professionals in software
-          engineering, artificial intelligence, and related fields to share
-          insights, explore opportunities, and collaborate on impactful
-          innovations. <br />
+          I’m a release and CI/CD-focused software engineer with 6+ years of
+          experience across release management, Java backend, full-stack web and
+          Python desktop development. I hold an M.S. in Computer Science from
+          Texas A&M University–Corpus Christi, with coursework in Machine
+          Learning, Artificial Intelligence and Android development.
+        </p>
+        <p>
+          Currently, I’m a Senior DevOps Engineer at EyeKon Technology Inc.,
+          owning end-to-end release management through GitHub Actions. I define
+          and enforce Git branching, commit and versioning standards (GitFlow,
+          semantic versioning, Conventional Commits), supervise compliance checks
+          in the pipeline and resolve complex merge and version conflicts to
+          keep production deployments reliable.
+        </p>
+        <p>
+          Previously, as a Software Engineering Intern at Enablor Inc., I was the
+          sole developer of a production Windows application for real-time
+          attention monitoring for the above client (Eyekon), built with Python, 
+          MediaPipe and OpenCV andshipped through a WiX MSI installer. I also diagnosed 
+          a Windows 11 24H2 compositor regression and traced it to its root cause.
+        </p>
+        <p>
+          Earlier, I delivered Spring Boot features for a telecom client
+          (Tracfone Wireless) at Sunera Technologies and full-stack enhancements
+          for the client IKEA at Tata Consultancy Services. I’m actively interested 
+          in DevOps, release engineering and full-stack development roles and the 
+          contact section at the bottom is the best way to reach me.
         </p>
         <p>
           To know more about me, please visit my resume which is available for
           download below.
         </p>
-        </div>
+      </div>
       <a
         href="/Pranav_Pratheek_Malleboyina_Resume.pdf"
         className="mt-6 btn btn-primary"
