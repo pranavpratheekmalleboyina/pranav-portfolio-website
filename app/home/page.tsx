@@ -20,8 +20,8 @@ export default function HomePage(){
          </div>    
          <div className="flex flex-col items-center gap-4"> 
                 <p className="max-w-2xl mx-auto p">
-                  Full-Stack Developer | Android Developer | Machine Learning 
-                  | Artificial Intelligence | Masters in Computer Science @ TAMU-CC
+                  DevOps Engineer  | Full-Stack Developer    | Android Developer <br/>
+                  Machine Learning | Artificial Intelligence | Masters in Computer Science @ TAMU-CC
                 </p> 
                   <Link href="/#contact" 
                      className="btn btn-primary"
