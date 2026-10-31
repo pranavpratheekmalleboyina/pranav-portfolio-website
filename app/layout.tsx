@@ -19,28 +19,28 @@ const raleway = Raleway({
 });
 
 const websiteUrl = "https://pranavpratheekmalleboyina.vercel.app/"
+const websiteTitle = "Pranav Pratheek Malleboyina | Senior DevOps & Software Engineer"
+const websiteName = "Pranav Pratheek Malleboyina"
+const websiteDescription = "Senior DevOps and software engineer with 6+ years across Java, Python, Full-Stack development(React, Node.js) and Release automation with GitHub Actions"
 
 export const metadata: Metadata = {
-  title: "Pranav Pratheek Malleboyina — Portfolio",
-  description:
-    "Full-stack engineer (Android + Web) building fast, reliable products with Kotlin, React, Python, and ML.",
-  metadataBase: new URL("https://your-domain.com"),
+  title: websiteTitle,
+  description: websiteDescription,
   metadataBase: new URL(websiteUrl),
   openGraph: {
-    title: "Pranav Malleboyina — Portfolio",
+    title: websiteTitle,
     description:
-      "Full-stack engineer (Android + Web). Kotlin • React • Python • ML.",
-    url: "https://your-domain.com",
-    siteName: "Pranav — Portfolio",
+      websiteDescription,
     url: websiteUrl,
+    siteName: websiteName,
     images: [{ url: "/og.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pranav Malleboyina — Portfolio",
+    title: websiteTitle,
     description:
-      "Full-stack engineer (Android + Web). Kotlin • React • Python • ML.",
+      websiteDescription,
     images: ["/og.png"],
   },
 };
