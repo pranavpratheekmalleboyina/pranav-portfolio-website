@@ -1,12 +1,78 @@
 export default function SkillsPage() {
   const skills = [
     {
+      category: "CI/CD & Release Engineering",
+      items: [
+        "GitHub Actions Workflows",
+        "CI/CD Pipelines",
+        "Release Management",
+        "Build Automation",
+        "Build/Test/Deployment Coordination",
+        "Pipeline Compliance Checks",
+        "Production Release Stability",
+      ],
+    },
+    {
+      category: "Version Control & Branching",
+      items: [
+        "Git",
+        "GitHub",
+        "GitFlow",
+        "Branching Strategies",
+        "Semantic Versioning",
+        "Conventional Commits",
+        "Pull Requests",
+        "Code Review",
+        "Merge & Version Conflict Resolution",
+      ],
+    },
+    {
+      category: "Build & Packaging",
+      items: [
+        "WiX Toolset",
+        "MSI Installers",
+        "PyInstaller",
+        "Custom Installation Actions",
+        "Windows Registry Configuration",
+        "Post-Install Automation",
+      ],
+    },
+    {
+      category: "Testing & Quality",
+      items: [
+        "JUnit",
+        "Unit Testing",
+        "Test-Driven Development (TDD)",
+        "Beta Testing",
+        "Defect Resolution",
+      ],
+    },
+    {
+      category: "Monitoring & Troubleshooting",
+      items: [
+        "Root Cause Analysis",
+        "Debugging",
+        "Application Logging",
+        "Production Support",
+        "Multi-threaded Debugging",
+      ],
+    },
+    {
+      category: "Security Hygiene",
+      items: [
+        "Dependency Vulnerability Remediation",
+        "npm audit",
+        "Patch Management",
+        "Secure Dependency Upgrades",
+      ],
+    },
+    {
       category: "Languages",
       items: ["Java", "Python", "VB.NET", "Kotlin", "C++"],
     },
     {
       category: "Web Technologies",
-      items: ["Microservices", "JSON", "XML", "HTML5", "CSS3", "JavaScript"],
+      items: ["Microservices", "JSON", "XML", "HTML5", "CSS3", "JavaScript","Markdown"],
     },
     {
       category: "Frameworks",
@@ -31,18 +97,19 @@ export default function SkillsPage() {
       category: "Tools",
       items: [
         "Linux",
+        "Windows",
         "Git",
+        "GitHub",
         "VS Code",
         "Eclipse",
-        "Google Colab",
-        "Markdown",
+        "Splunk",
         "Android Studio",
         "JUnit",
       ],
     },
     {
       category: "Methodologies",
-      items: ["Agile", "Test Driven Development (TDD)"],
+      items: ["Agile", "Scrum", "Test-Driven Development (TDD)", "SDLC", "DevOps"],
     },
   ];
 
