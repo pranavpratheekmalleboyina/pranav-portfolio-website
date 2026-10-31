@@ -18,17 +18,21 @@ const raleway = Raleway({
   variable: "--font-body",
 });
 
+const websiteUrl = "https://pranavpratheekmalleboyina.vercel.app/"
+
 export const metadata: Metadata = {
   title: "Pranav Pratheek Malleboyina — Portfolio",
   description:
     "Full-stack engineer (Android + Web) building fast, reliable products with Kotlin, React, Python, and ML.",
   metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL(websiteUrl),
   openGraph: {
     title: "Pranav Malleboyina — Portfolio",
     description:
       "Full-stack engineer (Android + Web). Kotlin • React • Python • ML.",
     url: "https://your-domain.com",
     siteName: "Pranav — Portfolio",
+    url: websiteUrl,
     images: [{ url: "/og.png", width: 1200, height: 630 }],
     type: "website",
   },
