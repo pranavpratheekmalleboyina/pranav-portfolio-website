@@ -12,6 +12,21 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    company: "EyeKon Technology Inc.",
+    role: "Senior DevOps Engineer",
+    type: "Full-time",
+    start: "Jun 2026",
+    end: "Present",
+    location: "Richardson, TX, USA · Remote",
+    logo: "/images/eyekon_logo.png",
+    bullets: [
+      "Own end-to-end release management across every product release, coordinating the build, test and deployment stages through GitHub Actions CI/CD workflows so that each release follows a consistent and repeatable path from commit to production.",
+      "Define and enforce Git branching, commit and versioning standards (GitFlow, semantic versioning, Conventional Commits) across the engineering workflow, supervising compliance checks in the pipeline to keep releases consistent and predictable and every change traceable to its purpose.",
+      "Resolve complex merge and version conflicts between concurrent branches, keeping releases stable and production deployments reliable.",
+      "Maintain an atomic, bisectable commit history, with one logical change per commit and outcome-focused messages, so that regressions can be isolated quickly with git bisect and git blame and any change can be reverted independently."
+    ]
+  },
+  {
     company: "Enablor Inc.",
     role: "Software Engineering Intern",
     type: "Internship",
