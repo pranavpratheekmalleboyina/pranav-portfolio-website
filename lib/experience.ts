@@ -12,6 +12,21 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    company: "Enablor Inc.",
+    role: "Software Engineering Intern",
+    type: "Internship",
+    start: "Dec 2025",
+    end: "May 2026",
+    location: "Pleasanton, CA, USA · On-site",
+    logo: "/images/enablor_logo.png",
+    bullets: [
+      "Built and packaged the Windows release of the application as an MSI installer using WiX Toolset, with custom elevated installation actions, registry configuration and automated post-install launch handling, and bundled the application for release using PyInstaller.",
+      "Sole developer of a production Windows desktop application for real-time attention monitoring during video calls, built end-to-end in Python with MediaPipe and OpenCV from architecture through MSI installer deployment.",
+      "Diagnosed a Windows 11 24H2 platform-specific compositor regression during beta testing that left application windows invisible, performing root cause analysis through multiple hypotheses to a withdrawn-parent window manager behaviour and implementing a precise, targeted fix.",
+      "Engineered a thread-safe multi-threaded pipeline across camera processing, UI and system tray components with cross-thread communication patterns, eliminating race conditions and UI blocking."
+    ]
+  },
+  {
     company: "Sunera Technologies, Inc. (SuneraTech)",
     role: "Java Backend Developer",
     type: "Full-time",
