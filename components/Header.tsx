@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 const nav = [
   { href: "/", label: "HOME" },
@@ -13,7 +14,11 @@ const nav = [
 export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 h-16 navbar">
-      <div className="container flex items-center justify-center h-full px-4 mx-auto">
+      <div className="container relative flex items-center justify-center h-full px-4 mx-auto">
+        {/* Absolute so the nav stays centred; hidden below lg where it would overlap the links. */}
+        <Link href="/" scroll aria-label="Home" className="absolute hidden left-4 lg:block">
+          <Logo size={50} />
+        </Link>
         <nav className="flex items-center text-sm tracking-wide gap-9">
           {nav.map((item) => (
             <Link
