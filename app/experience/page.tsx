@@ -52,8 +52,8 @@ export default function ExperiencePage() {
                       <span className="break-words hyphens-auto">
                         {job.start} – {job.end}
                       </span>
-                      {job.location ? <span className="hidden sm:inline">•</span> : null}
-                      <span className="break-words hyphens-auto">{job.location}</span>
+                      {job.location ? <span className="hidden mx-2 sm:inline">•</span> : null}
+                      <span className="block break-words sm:inline hyphens-auto">{job.location}</span>
                     </div>
                   </div>
                   

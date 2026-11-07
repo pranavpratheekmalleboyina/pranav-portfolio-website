@@ -44,12 +44,12 @@ export default function EducationPage() {
                       <span className="break-words gap-x-1 hyphens-auto">
                         {ed.start} – {ed.end}
                       </span>
-                      {ed.location ? <span className="hidden sm:inline">•</span> : null}
-                      <span className="break-words hyphens-auto">{ed.location}</span>
+                      {ed.location ? <span className="hidden mx-2 sm:inline">•</span> : null}
+                      <span className="block break-words sm:inline hyphens-auto">{ed.location}</span>
                       {ed.gpa ? (
                         <>
-                          <span className="hidden sm:inline">•</span>
-                          <span className="break-words hyphens-auto">GPA: {ed.gpa}</span>
+                          <span className="hidden mx-2 sm:inline">•</span>
+                          <span className="block break-words sm:inline hyphens-auto">GPA: {ed.gpa}</span>
                         </>
                       ) : null}
                     </div>
