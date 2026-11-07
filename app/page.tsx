@@ -35,7 +35,7 @@ export default function Page() {
       <section id="contact" className="text-center py-14">
           <ContactPage />
       </section>
-        <div className="fixed flex flex-col gap-5 text-2xl right-6 top-1/3">
+        <div className="flex justify-center gap-5 py-8 text-2xl md:fixed md:flex-col md:justify-start md:py-0 md:right-6 md:top-1/3">
           <a href="https://github.com/pranavpratheekmalleboyina" 
              target="_blank" 
              rel="noopener noreferrer"
