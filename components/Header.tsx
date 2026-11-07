@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import MobileNav from "./MobileNav";
 
 const nav = [
   { href: "/", label: "HOME" },
@@ -15,11 +16,12 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 h-16 navbar">
       <div className="container relative flex items-center justify-center h-full px-4 mx-auto">
-        {/* Absolute so the nav stays centred; hidden below lg where it would overlap the links. */}
-        <Link href="/" scroll aria-label="Home" className="absolute hidden left-4 lg:block">
+        {/* Absolute so the nav stays centred. Hidden only at md (768-1023px), where the logo would overlap the links;
+            phones show it beside the menu button. One Logo instance only: its SVG gradient id must be unique. */}
+        <Link href="/" scroll aria-label="Home" className="absolute left-4 md:hidden lg:block">
           <Logo size={50} />
         </Link>
-        <nav className="flex items-center text-sm tracking-wide gap-9">
+        <nav className="items-center hidden text-sm tracking-wide md:flex gap-9">
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -36,6 +38,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <MobileNav items={nav} />
       </div>
     </header>
   );
