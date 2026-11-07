@@ -65,7 +65,7 @@ export default function ExperiencePage() {
                     {job.bullets.map((b: string, idx: number) => (
                       <li
                         key={idx}
-                        className="leading-relaxed text-left break-all hyphens-auto"
+                        className="leading-relaxed text-left hyphens-auto"
                       >
                         {b}
                       </li>
