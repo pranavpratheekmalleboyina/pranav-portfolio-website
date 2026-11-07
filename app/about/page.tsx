@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <div className="prose max-w-none">
       <h2 className="mb-8 h2">ABOUT</h2>
-      <div className="space-y-6 leading-relaxed text-justify text-slate-300">
+      <div className="space-y-6 leading-relaxed text-left md:text-justify text-slate-300">
         <p>
           I’m a release and CI/CD-focused software engineer with 6+ years of
           experience across release management, Java backend, full-stack web and
