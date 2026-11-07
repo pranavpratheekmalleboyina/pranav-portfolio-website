@@ -58,7 +58,7 @@ export default function Page() {
              className="transition hover:text-cyan-400">
             <SiLeetcode />
           </a>
-          <a href="tel:+ 91-7659820085" 
+          <a href="tel:+917659820085" 
              className="transition hover:text-cyan-400">
              <FiPhone />
            </a>
